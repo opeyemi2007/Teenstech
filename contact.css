@@ -1,0 +1,128 @@
+
+/*==================BODY STYLES====================*/
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/*==================BODY STYLE END====================*/
+
+
+
+/*==================HEADER STYLES====================*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f96231; /* Change color on hover */
+}
+/*==================HEADER STYLES END====================*/
+
+
+
+/*==================FOOTER STYLES====================*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: down;
+}
+
+.email-icon {
+    font-size: 18px; /* Adjust the icon size */
+    color: #b8afaf; /* Set the icon color */
+}
+
+.email-icon :hover{
+    color: #f96231;
+    transform:underline;
+}
+/*==================FOOTER STYLES END====================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================RESPONSIVENESS STYLES====================*/
+
+@media  (max-width: 400px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin: 10px;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .slideshow{
+        display: none;
+    }
+}
+
+@media  (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin: 10px;
+    }
+
+
+    
+
+    nav li {
+        margin: 10px 0;
+    }
+    #logo{
+        height: 50px;
+        width: 60px;
+    }
+
+    .slideshow{
+        display: none;
+    }
+}
+/*============RESPONSIVE STYLES END==================*/

@@ -1,0 +1,234 @@
+/*==================BODY STYLES====================*/
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+/*==================HEADER STYLES====================*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f96231; /* Change color on hover */
+    scrollbar-highlight-color: #f96231;
+}
+
+
+
+/*==================MAIN STYLES====================*/
+main {
+    padding: 2rem;
+}
+
+.intro {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+
+
+/*==================FOOTER STYLES====================*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: down;
+}
+.email-icon {
+    font-size: 18px; /* Adjust the icon size */
+    color: #b8afaf; /* Set the icon color */
+}
+
+.email-icon :hover{
+    color: #f96231;
+    transform:underline;
+}
+
+
+
+/*==================COURSES STYLES====================*/
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+
+
+/*==================SLIDESHOW STYLES====================*/
+
+@keyframes slideRight {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.slideshow {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    right: 1;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slideRight 1s ease-in-out;
+}
+
+
+
+/*============RESPONSIVE STYLES START==================*/
+@media  (max-width: 400px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin: 10px;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+    
+    
+
+    .slideshow{
+        display: none;
+    }
+}
+
+
+@media  (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin: 10px;
+    }
+
+
+    
+
+    nav li {
+        margin: 10px 0;
+    }
+    #logo{
+        height: 50px;
+        width: 60px;
+    }
+
+    .slideshow{
+        display: none;
+    }
+    header img{
+        size: 2px;
+    }
+}
+/*============RESPONSIVE STYLES END==================*/

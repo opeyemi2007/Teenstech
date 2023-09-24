@@ -1,0 +1,267 @@
+/*==================BODY STYLES====================*/
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/*==================BODY END====================*/
+
+
+
+
+/*==================HEADER STYLES====================*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    position: top;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f96231; /* Change color on hover */
+}
+/*==================HEADER END====================*/
+
+
+
+
+/*==================FOOTER STYLES====================*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: down;
+}
+.email-icon {
+    font-size: 18px; /* Adjust the icon size */
+    color: #b8afaf; /* Set the icon color */
+}
+
+.email-icon :hover{
+    color: #f96231;
+    transform:underline;
+}
+/*==================FOOTER END====================*/
+
+
+
+/*==================COURSE CARD STYLES====================*/
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: #666;
+}
+/*==================COURSE CARD END====================*/
+
+
+
+
+/*==================COURSES STYLES====================*/
+.course-landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.course-landing img {
+    max-width: 50%;
+    border-radius: 5px;
+    margin-right: 2rem;
+}
+
+.course-info {
+    flex: 1;
+    text-align: left;
+}
+
+.course-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.course-info p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.course-info ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.course-info ul li {
+    font-size: 1rem;
+    color: #666;
+}
+
+.enroll-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #a34322;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+    background-color: #f96231; /* Darker shade on hover */
+}
+/*==================COURSES END====================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================RESPONSIVENESS STYLES====================*/
+@media  (max-width: 400px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin: 10px;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .slideshow{
+        display: none;
+    }
+    .course-landing h2{
+        font-size: 25px;
+    }
+    .course-landing p{
+        font-size: 15px;
+       
+    }
+    .course-info{
+        text-align: center;
+        align-items: baseline;
+    }
+    .course-landing img{
+        height: 240px;
+        
+       
+    }
+
+}
+
+@media  (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin: 10px;
+    }
+
+
+
+
+    nav li {
+        margin: 10px 0;
+    }
+    #logo{
+        height: 50px;
+        width: 60px;
+    }
+    
+
+    .slideshow{
+        display: none;
+    }
+    .course-landing h2,h3{
+        font-size: 15px;
+    }
+    .course-landing p{
+        font-size: 9px;
+    }
+    .course-landing ul li{
+        font-size: 10px;
+    }
+    .course-landing a{
+        font-size: 9px;
+    }
+    .course-landing img{
+        height: 240px;
+        
+        box-shadow: #333;
+        
+       
+    }
+    .course-landing img:hover{
+        pointer-events: fill;
+        color: #a34322;
+        
+       
+    }
+}
+/*============RESPONSIVE STYLES END==================*/
